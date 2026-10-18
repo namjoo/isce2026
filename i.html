@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISCE 2026 — Links</title>
+    <style>
+        :root {
+            color-scheme: light;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f5f6f8;
+            color: #20242b;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: grid;
+            place-items: center;
+            padding: 24px;
+        }
+
+        main {
+            width: min(100%, 560px);
+            padding: 36px;
+            background: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            box-shadow: 0 12px 32px rgba(20, 30, 50, 0.07);
+        }
+
+        h1 {
+            margin: 0 0 10px;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            line-height: 1.25;
+        }
+
+        p {
+            margin: 0 0 24px;
+            color: #626b78;
+            line-height: 1.6;
+        }
+
+        nav {
+            display: grid;
+            gap: 12px;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            padding: 17px 18px;
+            color: #20242b;
+            text-decoration: none;
+            border: 1px solid #dfe3e8;
+            border-radius: 10px;
+            transition: border-color 160ms ease, background 160ms ease;
+        }
+
+        a:hover, a:focus-visible {
+            background: #f8f9fb;
+            border-color: #476eff;
+            outline: none;
+        }
+
+        .arrow {
+            color: #476eff;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 480px) {
+            main { padding: 24px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>ISCE 2026</h1>
+        <p>Access the conference resources using the links below.</p>
+        <nav aria-label="Conference resources">
+            <a href="https://namjoo.github.io/isce2026/posters.html">
+                <span>Accepted Posters</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+            <a href="https://namjoo.github.io/isce2026/davar.html">
+                <span>Judges</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+            </a>
+        </nav>
+    </main>
+</body>
+</html>
